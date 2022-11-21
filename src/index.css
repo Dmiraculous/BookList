@@ -5,19 +5,51 @@
           box-sizing: border-box;
 }
 
+.home-style {
+  min-width: 80%;
+  min-height: 80vh;
+  background: #181515;
+  color: #9e8b1d;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.home-style h1 {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem;
+}
+
+.home-style .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-style .flex form {
+  margin-left: 5rem;
+}
+
+.home-style .flex form input {
+  padding: 10px 80px;
+  margin: 8px 14px;
+}
+
 img {
   width: 100%;
   height: 100%;
 }
 
 .image-wrap {
-  width: 350px;
-  height: 200px;
+  width: 250px;
+  height: 180px;
 }
 
 h2,
 p {
-  margin-left: 5.5rem;
+  margin-left: 2.5rem;
 }
 
 h2 {
@@ -31,8 +63,49 @@ p {
 }
 
 article {
+  padding: 0;
   margin-bottom: 1.5rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.text-tittle {
+  text-align: center;
+  color: navy;
+  padding: 1rem;
+}
+
+.firstGroup {
+  max-width: 80%;
+  background-color: bisque;
+  padding-top: 1.5rem;
+  padding-left: 3rem;
+  margin-left: 5rem;
+}
+
+@media screen and (min-width: 767px) {
+  .firstGroup {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 929px) {
+  .firstGroup {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .firstGroup {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding-left: 5rem;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,25 +1,55 @@
 import React from "react";
 import "./index.scss";
-import { ReactDOM } from "react";
+import Home from "./Component/HomePage";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const BookReview = () => {
   return (
     <>
-      <Book
-        image="https://static.independent.co.uk/2020/12/11/11/sally-rooney-normal-people-indybest.jpg?quality=75&width=982&height=726&auto=webp"
-        tittle="Be good"
-        author="Richee"
-      />
-      <Book
-        image="https://www.google.com/aclk?sa=l&ai=DChcSEwiPiuqw_az7AhUZ43cKHU_dDpMYABANGgJlZg&sig=AOD64_2SJDvOUuilLUzijlLAw8HRrHdFGQ&adurl&ctype=5&ved=2ahUKEwjCwd2w_az7AhUSWxoKHWckCGAQvhd6BAgBEGc"
-        tittle="only me"
-        author="wendy"
-      />
+      <Home />
+      <h1 className="text-tittle">BOOK LIST</h1>
+      <div className="firstGroup">
+        <Book
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEubihVkM502lzSnniS-uBmRSCpvmx8KjX1w&usqp=CAU"
+          alt="book"
+          tittle="Be good"
+          author="Richee"
+        />
 
-      <Book
-        image="https://www.google.com/aclk?sa=l&ai=DChcSEwiPiuqw_az7AhUZ43cKHU_dDpMYABAJGgJlZg&sig=AOD64_2Y32OlaCbyWvdhq4IEXXh2bmeZTg&adurl&ctype=5&ved=2ahUKEwjCwd2w_az7AhUSWxoKHWckCGAQvhd6BAgBEF0"
-        tittle="The power of focus"
-        author="Jack"
-      />
+        <Book
+          image="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTmTmUYNY09U8zY8msaPOzD3DGqCzsGuEO-WiFByaOXxakrcb57bG5kO9P0tfa12o4tk81QkW0qlrc&usqp=CAc"
+          alt="book"
+          tittle="The power of focus"
+          author="David"
+        />
+
+        <Book
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmTicXlTVN59GbOQUShPoyxyrzmoALFsyHZA&usqp=CAU"
+          alt="book"
+          tittle="Normal people"
+          author="Rooney"
+        />
+
+        <Book
+          image="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRuslN3x5u2LEfmYbCurPSYhoAJJqkFtn_e_R23DE3gBG2gxqxPkeVLqOcWZs2R2wYKbpDOAJrYiQ&usqp=CAc"
+          alt="book"
+          tittle="Think Big"
+          author="Ben"
+        />
+        <Book
+          image="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSTSgZvPkj9eMP3F5iapnnLVg-GEJYN7gUYOEVaiImTRp8-K4uItdpEvsV04FMNeZvEg7o3hrPNsQ&usqp=CAc"
+          alt="book"
+          tittle="How to talk"
+          author="Larry"
+        />
+
+        <Book
+          image="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRKF6vV2OnSVL20zeDvwZwDgPO_LWlKmohNDXbjzUWuiKGpXmq4in4RJGxuB54y&usqp=CAc"
+          alt="book"
+          tittle="The power of focus"
+          author="Jack"
+        />
+      </div>
     </>
   );
 };

@@ -3,17 +3,130 @@
   margin: 0;
   box-sizing: border-box;
 }
+button {
+  padding: 6px 40px;
+  background-color: gold;
+  border-radius: 5px;
+  margin-left: 4rem;
+
+  &.btn2 {
+    background-color: gray;
+    padding: 6px 40px;
+    border-radius: 8px;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(248, 222, 222);
+}
+
+.home-style {
+  width: 100%;
+  min-height: 80vh;
+  background: rgb(24, 21, 21);
+  color: rgb(158, 139, 29);
+  padding: 2rem;
+  margin: 2rem;
+  margin: auto;
+
+  h1 {
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .flex {
+    @media screen and (max-width: 929px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin-inline: 20%;
+      margin-bottom: 1rem;
+    }
+    display: flex;
+    max-width: 80vh;
+    margin: auto 0px;
+    gap: 5rem; // gap: 30px;
+    @media screen and (max-width: 767px) {
+      max-width: 100vh;
+      justify-content: center;
+    }
+
+    .hero-contact {
+      padding: 2rem;
+      h2 {
+        color: coral;
+      }
+      .contact-title {
+        margin-left: 3rem;
+        padding: 0.5rem;
+      }
+      p {
+        padding: 1rem;
+        color: rgb(158, 139, 29);
+      }
+      .hero-book {
+        width: 180px;
+        height: 150px;
+        margin-left: 3rem;
+        padding: 1rem;
+      }
+    }
+    form {
+      margin-left: 5rem;
+      @media screen and (max-width: 767px) {
+        margin-left: 0px;
+      }
+
+      input {
+        padding: 10px 80px;
+        margin: 8px 14px;
+        @media screen and (max-width: 767px) {
+          padding: 7px 50px;
+          margin: 6px 10px;
+        }
+      }
+      .btn3 {
+        padding: 10px 145px;
+        margin: 8px 14px;
+        @media screen and (max-width: 767px) {
+          padding: 7px 115px;
+          margin: 6px 10px;
+        }
+      }
+      fieldset {
+        padding-bottom: 2rem;
+        @media screen and (max-width: 767px) {
+          padding: 0px;
+        }
+        legend {
+          margin: 2rem;
+        }
+      }
+    }
+  }
+  hr {
+    margin: auto;
+  }
+  .hr-text {
+    text-align: center;
+    color: gray;
+    letter-spacing: 0.5rem;
+    font-size: 13px;
+    margin-top: 1rem;
+  }
+}
 img {
   width: 100%;
   height: 100%;
 }
 .image-wrap {
-  width: 350px;
-  height: 200px;
+  width: 250px;
+  height: 180px;
 }
 h2,
 p {
-  margin-left: 5.5rem;
+  margin-left: 2.5rem;
 }
 h2 {
   color: navy;
@@ -24,7 +137,34 @@ p {
   font-weight: 500;
 }
 article {
+  padding: 0;
   margin-bottom: 1.5rem;
-  margin: 1rem;
-  padding: 0.5rem;
+  padding-top: 0.5rem;
+}
+.text-tittle {
+  text-align: center;
+  color: navy;
+  padding: 1rem;
+}
+
+.firstGroup {
+  max-width: 80%;
+  background-color: bisque;
+  padding-top: 1.5rem;
+  padding-left: 3rem;
+  margin-left: 5rem;
+
+  @media screen and (min-width: 767px) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: 929px) {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 5rem;
+  }
 }
